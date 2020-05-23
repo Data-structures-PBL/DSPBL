@@ -62,6 +62,7 @@
             this.ClientSize = new System.Drawing.Size(484, 261);
             this.Controls.Add(this.progressBar1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashForm";
