@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Net;
 
 namespace DSPBL
 {
@@ -21,6 +23,7 @@ namespace DSPBL
         {
             Infobut.Focus();
             Infobut.BackColor = Color.Violet;
+
         }
         private void Button1_Click(object sender, EventArgs e)
         {
@@ -66,6 +69,29 @@ namespace DSPBL
             this.Hide();
             graph.ShowDialog();
             this.Close();
+        }
+
+        private void MenuBut_Click(object sender, EventArgs e)
+        {
+            //expand
+            if(panel1.Width==65)
+            {
+                panel1.Visible = false;
+                panel1.Width = 250;
+                PanelAnimation2.ShowSync(panel1);
+            }
+            //minimize
+            else
+            {
+                panel1.Visible = false;
+                panel1.Width = 65;
+                PanelAnimation.ShowSync(panel1);
+            }
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
