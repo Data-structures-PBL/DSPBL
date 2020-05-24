@@ -1,6 +1,6 @@
 ﻿namespace DSPBL
 {
-    partial class Form1
+    partial class HpIssues
     {
         /// <summary>
         /// Required designer variable.
@@ -28,39 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.ExitBut = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HpIssues));
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.displayTxt = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.GraphBut = new System.Windows.Forms.Button();
             this.HcareBut = new System.Windows.Forms.Button();
+            this.ExitBut = new System.Windows.Forms.Button();
             this.HealthBut = new System.Windows.Forms.Button();
             this.Infobut = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.displayTxt = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // ExitBut
+            // panel3
             // 
-            this.ExitBut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ExitBut.BackgroundImage")));
-            this.ExitBut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ExitBut.FlatAppearance.BorderSize = 0;
-            this.ExitBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitBut.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitBut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ExitBut.Location = new System.Drawing.Point(2, 472);
-            this.ExitBut.Name = "ExitBut";
-            this.ExitBut.Size = new System.Drawing.Size(111, 65);
-            this.ExitBut.TabIndex = 0;
-            this.ExitBut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.ExitBut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ExitBut.UseVisualStyleBackColor = true;
-            this.ExitBut.Click += new System.EventHandler(this.Button1_Click);
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.displayTxt);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(114, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(886, 77);
+            this.panel3.TabIndex = 4;
+            // 
+            // displayTxt
+            // 
+            this.displayTxt.Font = new System.Drawing.Font("Malgun Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.displayTxt.Location = new System.Drawing.Point(12, 12);
+            this.displayTxt.Name = "displayTxt";
+            this.displayTxt.Size = new System.Drawing.Size(556, 52);
+            this.displayTxt.TabIndex = 0;
+            this.displayTxt.Text = "Information";
+            this.displayTxt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel1
             // 
@@ -76,7 +81,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(114, 550);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 3;
             // 
             // GraphBut
             // 
@@ -110,6 +115,23 @@
             this.HcareBut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.HcareBut.UseVisualStyleBackColor = true;
             // 
+            // ExitBut
+            // 
+            this.ExitBut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ExitBut.BackgroundImage")));
+            this.ExitBut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ExitBut.FlatAppearance.BorderSize = 0;
+            this.ExitBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitBut.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitBut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ExitBut.Location = new System.Drawing.Point(2, 472);
+            this.ExitBut.Name = "ExitBut";
+            this.ExitBut.Size = new System.Drawing.Size(111, 65);
+            this.ExitBut.TabIndex = 0;
+            this.ExitBut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ExitBut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ExitBut.UseVisualStyleBackColor = true;
+            this.ExitBut.Click += new System.EventHandler(this.ExitBut_Click);
+            // 
             // HealthBut
             // 
             this.HealthBut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HealthBut.BackgroundImage")));
@@ -125,7 +147,6 @@
             this.HealthBut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.HealthBut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.HealthBut.UseVisualStyleBackColor = true;
-            this.HealthBut.Click += new System.EventHandler(this.HealthBut_Click);
             // 
             // Infobut
             // 
@@ -142,7 +163,6 @@
             this.Infobut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Infobut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Infobut.UseVisualStyleBackColor = true;
-            this.Infobut.Click += new System.EventHandler(this.Infobut_Click);
             // 
             // panel2
             // 
@@ -156,37 +176,15 @@
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Lucida Console", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(3, 13);
+            this.label1.Location = new System.Drawing.Point(11, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 54);
             this.label1.TabIndex = 0;
             this.label1.Text = "CC";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.displayTxt);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(114, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(886, 77);
-            this.panel3.TabIndex = 2;
-            // 
-            // displayTxt
-            // 
-            this.displayTxt.Font = new System.Drawing.Font("Malgun Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.displayTxt.Location = new System.Drawing.Point(12, 12);
-            this.displayTxt.Name = "displayTxt";
-            this.displayTxt.Size = new System.Drawing.Size(556, 52);
-            this.displayTxt.TabIndex = 0;
-            this.displayTxt.Text = "Information";
-            this.displayTxt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.displayTxt.Click += new System.EventHandler(this.DisplayTxt_Click);
             // 
             // panel4
             // 
@@ -195,45 +193,40 @@
             this.panel4.Location = new System.Drawing.Point(114, 77);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(886, 473);
-            this.panel4.TabIndex = 3;
+            this.panel4.TabIndex = 5;
             // 
-            // Form1
+            // HpIssues
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1000, 550);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "HpIssues";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "HpIssues";
+            this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button ExitBut;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label displayTxt;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button GraphBut;
         private System.Windows.Forms.Button HcareBut;
+        private System.Windows.Forms.Button ExitBut;
         private System.Windows.Forms.Button HealthBut;
         private System.Windows.Forms.Button Infobut;
-        private System.Windows.Forms.Label displayTxt;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
     }
 }
-

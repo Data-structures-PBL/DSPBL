@@ -19,15 +19,34 @@ namespace DSPBL
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Infobut.Focus();
+            Infobut.BackColor = Color.Gray;
         }
         private void Button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void Label2_Click(object sender, EventArgs e)
+        private void Infobut_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DisplayTxt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HealthBut_Click(object sender, EventArgs e)
+        {
+            HpIssues hpIssues = new HpIssues();
+            hpIssues.Show();
+            this.Hide();
         }
     }
 }
