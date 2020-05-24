@@ -82,6 +82,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(114, 550);
             this.panel1.TabIndex = 3;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
             // GraphBut
             // 
@@ -98,6 +99,7 @@
             this.GraphBut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.GraphBut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.GraphBut.UseVisualStyleBackColor = true;
+            this.GraphBut.Click += new System.EventHandler(this.GraphBut_Click);
             // 
             // HcareBut
             // 
@@ -114,6 +116,7 @@
             this.HcareBut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.HcareBut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.HcareBut.UseVisualStyleBackColor = true;
+            this.HcareBut.Click += new System.EventHandler(this.HcareBut_Click);
             // 
             // ExitBut
             // 
@@ -147,6 +150,7 @@
             this.HealthBut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.HealthBut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.HealthBut.UseVisualStyleBackColor = true;
+            this.HealthBut.Click += new System.EventHandler(this.HealthBut_Click);
             // 
             // Infobut
             // 
@@ -163,6 +167,7 @@
             this.Infobut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Infobut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Infobut.UseVisualStyleBackColor = true;
+            this.Infobut.Click += new System.EventHandler(this.Infobut_Click);
             // 
             // panel2
             // 
@@ -207,6 +212,7 @@
             this.Name = "Graphs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Graphs";
+            this.Load += new System.EventHandler(this.Graphs_Load);
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

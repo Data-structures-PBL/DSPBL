@@ -93,6 +93,7 @@
             this.GraphBut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.GraphBut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.GraphBut.UseVisualStyleBackColor = true;
+            this.GraphBut.Click += new System.EventHandler(this.GraphBut_Click);
             // 
             // HcareBut
             // 
@@ -109,6 +110,7 @@
             this.HcareBut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.HcareBut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.HcareBut.UseVisualStyleBackColor = true;
+            this.HcareBut.Click += new System.EventHandler(this.HcareBut_Click);
             // 
             // HealthBut
             // 

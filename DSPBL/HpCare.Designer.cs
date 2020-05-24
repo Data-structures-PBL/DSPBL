@@ -98,6 +98,7 @@
             this.GraphBut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.GraphBut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.GraphBut.UseVisualStyleBackColor = true;
+            this.GraphBut.Click += new System.EventHandler(this.GraphBut_Click);
             // 
             // HcareBut
             // 
@@ -114,6 +115,7 @@
             this.HcareBut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.HcareBut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.HcareBut.UseVisualStyleBackColor = true;
+            this.HcareBut.Click += new System.EventHandler(this.HcareBut_Click);
             // 
             // ExitBut
             // 
@@ -147,6 +149,7 @@
             this.HealthBut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.HealthBut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.HealthBut.UseVisualStyleBackColor = true;
+            this.HealthBut.Click += new System.EventHandler(this.HealthBut_Click);
             // 
             // Infobut
             // 
@@ -163,6 +166,7 @@
             this.Infobut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Infobut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Infobut.UseVisualStyleBackColor = true;
+            this.Infobut.Click += new System.EventHandler(this.Infobut_Click);
             // 
             // panel2
             // 
@@ -207,6 +211,7 @@
             this.Name = "HpCare";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HpCare";
+            this.Load += new System.EventHandler(this.HpCare_Load);
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

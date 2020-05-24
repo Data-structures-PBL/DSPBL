@@ -20,7 +20,7 @@ namespace DSPBL
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -29,12 +29,13 @@ namespace DSPBL
         }
         private void SplashForm_Load(object sender, EventArgs e)
         {
-            time.Tick += new EventHandler(Pbar);
-            time.Enabled = true;
+            timer1.Tick += new EventHandler(Pbar);
+            timer1.Enabled = true;
+
         }
         void Pbar(object sender, EventArgs e)
         {
-            progressBar1.Increment(5);
+            progressBar1.Increment(10);
             if (progressBar1.Value == 100) timer2.Enabled = true;
         }
 
