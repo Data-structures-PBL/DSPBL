@@ -63,6 +63,8 @@ namespace DSPBL
         {
             GraphBut.Focus();
             GraphBut.BackColor = Color.Violet;
+            chart1.Visible = false;
+            chart2.Visible = false;
 
         }
 
@@ -87,6 +89,54 @@ namespace DSPBL
 
         private void Logo_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+
+        private void BunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            WebClient client = new WebClient();
+            client.Credentials = new NetworkCredential("Pblgroup", "Pblgroupwork69");
+            client.DownloadFile("ftp://66.220.9.50/My Documents/CovidTracker.txt", "C://csv files//CovidTracker.txt");
+
+            StreamReader readfile = new StreamReader("C://csv files//CovidTracker.txt");
+
+            chart1.Visible = true;
+            chart2.Visible = true;
+
+            while (readfile.Peek()!=-1)
+            {
+                string entry = readfile.ReadLine();
+                string[] entries = entry.Split(',');
+                string date = entries[0];
+                string cases = entries[1];
+                string recs = entries[2];
+                string deds = entries[3];
+
+                ListViewItem lvi = new ListViewItem(date);
+                lvi.SubItems.Add(cases);
+                lvi.SubItems.Add(recs);
+                lvi.SubItems.Add(deds);
+                listView1.Items.Add(lvi);
+
+                for(int day = 0;day <=12;day++)
+                {
+                    chart1.Series["Total Cases"].Points.AddXY(entries[0], entries[1]);
+                    chart1.Series["Recoveries"].Points.AddXY(entries[0], entries[2]);
+                    chart1.Series["Deaths"].Points.AddXY(entries[0], entries[3]);
+
+                    chart2.Series["Total Cases"].Points.AddXY(entries[0], entries[1]);
+                    chart2.Series["Recoveries"].Points.AddXY(entries[0], entries[2]);
+                    chart2.Series["Deaths"].Points.AddXY(entries[0], entries[3]);
+                }
+                
+            }
 
         }
     }
